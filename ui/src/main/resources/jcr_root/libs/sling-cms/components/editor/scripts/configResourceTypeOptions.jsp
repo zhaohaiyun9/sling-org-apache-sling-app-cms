@@ -17,7 +17,7 @@
  * under the License.
  */ --%>
  <%@include file="/libs/sling-cms/global.jsp"%>
-<option value="">Select Config Type</option>
+<option value=""><fmt:message key="Select Config Type" /></option>
 <c:set var="query" value="SELECT * FROM [sling:Component] WHERE [componentType]='SlingCMS-Config' ORDER BY [jcr:title]" />
 <c:forEach var="component" items="${sling:findResources(resourceResolver,query,'JCR-SQL2')}">
 	<c:choose>

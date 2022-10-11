@@ -231,11 +231,11 @@ public class FakeResponse implements HttpServletResponse {
 
     @Override
     public void setStatus(int i) {
-        throw new UnsupportedOperationException();
+        // do nothing
     }
 
     @Override
     public void setStatus(int i, String s) {
-        throw new UnsupportedOperationException();
+        // do nothing
     }
 }

@@ -50,6 +50,11 @@
       "sling:message": "添加类",
       "sling:key": "Add Classes"
     },
+    "msg-add-component": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "添加组件",
+      "sling:key": "Add Component"
+    },
     "msg-add-components": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "添加组件",
@@ -500,6 +505,11 @@
       "sling:message": "计数",
       "sling:key": "Count"
     },
+    "msg-create": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "创建",
+      "sling:key": "Create"
+    },
     "msg-create-authorizable-folder": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "新建用户权限文件夹",
@@ -545,6 +555,11 @@
       "sling:message": "新建标签",
       "sling:key": "Create Taxonomy"
     },
+    "msg-create-transformation": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "新建转换",
+      "sling:key": "Create Transformation"
+    },
     "msg-create-user": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "新建用户",
@@ -589,6 +604,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "本地时间",
       "sling:key": "Datetime Local"
+    },
+    "msg-debug-query": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "调试查询",
+      "sling:key": "Debug Query"
     },
     "msg-default": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -649,6 +669,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "删除页面",
       "sling:key": "Delete Page"
+    },
+    "msg-delete-rendition": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "删除预览图",
+      "sling:key": "Delete Rendition"
     },
     "msg-delete-site-config": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -755,6 +780,11 @@
       "sling:message": "文件类型",
       "sling:key": "DocType"
     },
+    "msg-download-rendition": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "下载预览图",
+      "sling:key": "Download Rendition"
+    },
     "msg-download-file": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "下载文件",
@@ -764,6 +794,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "删除无效队列",
       "sling:key": "Drop invalid queue items"
+    },
+    "msg-duration": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "时长",
+      "sling:key": "Duration"
     },
     "msg-edit": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -1265,6 +1300,11 @@
       "sling:message": "任务",
       "sling:key": "Job"
     },
+    "msg-job-name": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "任务名称",
+      "sling:key": "Job Name"
+    },
     "msg-jobs": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "任务管理",
@@ -1565,6 +1605,11 @@
       "sling:message": "移动/复制用户",
       "sling:key": "Move / Copy User"
     },
+    "msg-move-copy": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "移动/复制",
+      "sling:key": "Move/Copy"
+    },
     "msg-move-copy-content": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "移动/复制内容",
@@ -1579,6 +1624,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "可多选",
       "sling:key": "Multiple Select?"
+    },
+    "msg-my-transformations": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "我的转换",
+      "sling:key": "My Transformations"
     },
     "msg-n-a": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -1629,6 +1679,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "节点名称",
       "sling:key": "Node Name"
+    },
+    "msg-none": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "没有",
+      "sling:key": "None"
     },
     "msg-not-found": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -1785,6 +1840,11 @@
       "sling:message": "占位符",
       "sling:key": "Placeholder"
     },
+    "msg-plan": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "计划",
+      "sling:key": "Plan"
+    },
     "msg-policy": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "策略",
@@ -1794,6 +1854,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "路径策略",
       "sling:key": "Policy Path"
+    },
+    "msg-popular-queries": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "常用查询",
+      "sling:key": "Popular Queries"
     },
     "msg-position": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -1930,6 +1995,21 @@
       "sling:message": "查询",
       "sling:key": "Query"
     },
+    "msg-query-debugger": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "查询调试器",
+      "sling:key": "Query Debugger"
+    },
+    "msg-query-language": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "查询语言",
+      "sling:key": "Query Language"
+    },
+    "msg-query-statement": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "查询语句",
+      "sling:key": "Query Statement"
+    },
     "msg-queue": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "队列",
@@ -2014,6 +2094,21 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "移除任务",
       "sling:key": "Remove Job"
+    },
+    "msg-rendition": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "预览图",
+      "sling:key": "Rendition"
+    },
+    "msg-rendition-name": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "预览图名称",
+      "sling:key": "Rendition Name"
+    },
+    "msg-renditions": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "预览图",
+      "sling:key": "Renditions"
     },
     "msg-reorder": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -2210,10 +2305,25 @@
       "sling:message": "选择组件",
       "sling:key": "Select Component"
     },
+    "msg-select-config-type": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "选择配置类型",
+      "sling:key": "Select Config Type"
+    },
     "msg-select-job": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "选择任务",
       "sling:key": "Select Job"
+    },
+    "msg-select-locale": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "选择语言环境",
+      "sling:key": "Select Locale"
+    },
+    "msg-select-page-type": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "选择页面类型",
+      "sling:key": "Select Page Type"
     },
     "msg-select-policy": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -2419,6 +2529,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "Sling CMS - 缩略图",
       "sling:key": "Sling CMS Thumbnails"
+    },
+    "msg-slow-queries": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "慢查询",
+      "sling:key": "Slow Queries"
     },
     "msg-start": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -2687,27 +2802,27 @@
     },
     "msg-transformation": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "变换",
+      "sling:message": "转换",
       "sling:key": "Transformation"
     },
     "msg-transformation-format": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "变换处理格式",
+      "sling:message": "转换处理格式",
       "sling:key": "Transformation Format"
     },
     "msg-transformation-handlers": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "变换处理程序",
+      "sling:message": "转换处理程序",
       "sling:key": "Transformation Handlers"
     },
     "msg-transformation-name": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "变换处理名称",
+      "sling:message": "转换处理名称",
       "sling:key": "Transformation Name"
     },
     "msg-transformations": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "变换处理列表",
+      "sling:message": "转换处理列表",
       "sling:key": "Transformations"
     },
     "msg-transport-secret-provider-target": {
@@ -4203,15 +4318,15 @@
       "sling:message": "Job",
       "sling:key": "Job"
     },
-    "msg-jobs": {
-      "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "Jobs",
-      "sling:key": "Jobs"
-    },
     "msg-job-name": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "Name des Jobs",
       "sling:key": "Job Name"
+    },
+    "msg-jobs": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "Jobs",
+      "sling:key": "Jobs"
     },
     "msg-jpeg": {
       "jcr:primaryType": "sling:MessageEntry",

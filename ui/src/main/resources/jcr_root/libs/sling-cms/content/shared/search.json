@@ -21,7 +21,7 @@
                         "sling:resourceType": "sling-cms/components/editor/fields/text",
                         "label": "Term",
                         "name": "term",
-                        "required": "required"
+                        "required": true
                     },
                     "type": {
                         "jcr:primaryType": "nt:unstructured",
@@ -29,10 +29,10 @@
                         "name": "type",
                         "label": "Content Type",
                         "options": [
-                            "All=nt:base",
-                            "Files=sling:File",
-                            "Folders=sling:Folder",
-                            "Pages=sling:Page"
+                            "全部=nt:base",
+                            "文件=sling:File",
+                            "文件夹=sling:Folder",
+                            "页面=sling:Page"
                         ]
                     },
                     "path": {

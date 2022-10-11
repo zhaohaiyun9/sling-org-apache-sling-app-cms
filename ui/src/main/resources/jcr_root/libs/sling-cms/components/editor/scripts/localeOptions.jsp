@@ -17,7 +17,7 @@
  * under the License.
  */ --%>
  <%@include file="/libs/sling-cms/global.jsp"%>
-<option value="">Select Locale</option>
+<option value=""><fmt:message key="Select Locale" /></option>
 <c:forEach var="locale" items="${sling:adaptTo(slingRequest,'org.apache.sling.cms.core.models.LocaleList').locales}">
     <c:if test="${not empty locale.language}">
         <option value="${locale}" ${locale == editProperties[properties.name] ? 'selected' : ''}>
