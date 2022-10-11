@@ -151,7 +151,7 @@
             "jcr:primaryType": "nt:unstructured",
             "enabledGroups": ["administrators"],
             "link": "/cms/auth/list.html/home",
-            "text": "Users & Groups"
+            "text": "Users and Groups"
           }
         }
       }

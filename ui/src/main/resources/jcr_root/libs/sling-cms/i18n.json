@@ -780,6 +780,11 @@
       "sling:message": "文件类型",
       "sling:key": "DocType"
     },
+    "msg-done": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "完成",
+      "sling:key": "Done"
+    },
     "msg-download-rendition": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "下载预览图",
@@ -1100,6 +1105,11 @@
       "sling:message": "全局",
       "sling:key": "Global"
     },
+    "msg-go": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "开始",
+      "sling:key": "Go"
+    },
     "msg-grid": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "平铺",
@@ -1360,6 +1370,11 @@
       "sling:message": "最近发布操作",
       "sling:key": "Last Publication Type"
     },
+    "msg-last-thread": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "最近线程",
+      "sling:key": "Last Thread"
+    },
     "msg-layout": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "布局",
@@ -1499,6 +1514,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "最高级别",
       "sling:key": "Max Grade Level"
+    },
+    "msg-max-rows-scanned": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "最大扫描行数",
+      "sling:key": "Max Rows Scanned"
     },
     "msg-maximum-grade-level": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -1682,7 +1702,7 @@
     },
     "msg-none": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "没有",
+      "sling:message": "无",
       "sling:key": "None"
     },
     "msg-not-found": {
@@ -2245,6 +2265,11 @@
       "sling:message": "行类",
       "sling:key": "Row Class"
     },
+    "msg-rows-scanned-read": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "扫描/读取行数",
+      "sling:key": "Rows Scanned / Read"
+    },
     "msg-standalone": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "单独实例",
@@ -2254,6 +2279,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "同一窗口",
       "sling:key": "Same Window"
+    },
+    "msg-sample-results": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "结果条数",
+      "sling:key": "Sample Results"
     },
     "msg-save": {
       "jcr:primaryType": "sling:MessageEntry",
@@ -2317,7 +2347,7 @@
     },
     "msg-select-locale": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "选择语言环境",
+      "sling:message": "选择区域",
       "sling:key": "Select Locale"
     },
     "msg-select-page-type": {
@@ -2934,6 +2964,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "用户/用户组",
       "sling:key": "Users / Groups"
+    },
+    "msg-users-and-groups": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "用户和组",
+      "sling:key": "Users and Groups"
     },
     "msg-value": {
       "jcr:primaryType": "sling:MessageEntry",

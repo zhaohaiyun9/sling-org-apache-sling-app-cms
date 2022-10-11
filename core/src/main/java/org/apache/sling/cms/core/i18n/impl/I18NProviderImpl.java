@@ -127,7 +127,7 @@ public class I18NProviderImpl implements I18NProvider {
         Locale locale = Optional.ofNullable(wrapper).map(AuthorizableWrapper::getAuthorizable).map(a -> {
             try {
                 Value[] val = a.getProperty("profile/locale");
-                if (val != null && val.length == 0) {
+                if (val != null && val.length > 0) {
                     return val[0].getString();
                 } else {
                     return Locale.ENGLISH.toLanguageTag();

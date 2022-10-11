@@ -21,7 +21,8 @@
             "contentbreadcrumb": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "sling-cms/components/cms/contentbreadcrumb",
-                "depth": 2
+                "depth": 2,
+                "rootTitle": "Taxonomy"
             },
             "contenttable": {
                 "jcr:primaryType": "nt:unstructured",

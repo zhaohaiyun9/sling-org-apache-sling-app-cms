@@ -154,7 +154,7 @@ rava.bind(".file", {
         false
       );
       field.closest("form").querySelector("button[type=submit]").remove();
-      close.innerText = "Done";
+      close.innerText = "完成";
       close.addEventListener("click", () => {
         window.Sling.CMS.ui.reloadContext();
       });
