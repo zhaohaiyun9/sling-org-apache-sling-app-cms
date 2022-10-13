@@ -47,15 +47,15 @@
             "name": "format",
             "required": true,
             "options": {
-              "png": {
-                "jcr:primaryType": "nt:unstructured",
-                "label": "PNG",
-                "value": "png"
-              },
               "jpg": {
                 "jcr:primaryType": "nt:unstructured",
                 "label": "Jpeg",
                 "value": "jpeg"
+              },
+              "png": {
+                "jcr:primaryType": "nt:unstructured",
+                "label": "PNG",
+                "value": "png"
               }
             }
           }

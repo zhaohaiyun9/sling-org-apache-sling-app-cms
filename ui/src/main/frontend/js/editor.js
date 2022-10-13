@@ -205,12 +205,12 @@ if (!window.CMSEditor) {
             const res = await response.json();
             if (!response.ok) {
               ui.confirmMessage(
-                "Failed to move",
+                "移动失败",
                 res["status.message"] || response.statusText,
                 () => {}
               );
             } else {
-              ui.confirmReload(res, "success");
+              ui.confirmReload(res, "成功");
             }
             evt.target.classList.remove("sling-cms-droptarget__is-over");
           }
@@ -349,7 +349,7 @@ if (!window.CMSEditor) {
   window.CMSEditor = CMSEditor;
   window.onbeforeunload = () => {
     if (CMSEditor.ui.modalDisplayed) {
-      return "Are you sure you want to leave this page?";
+      return "确定要离开此页面吗？";
     }
     return null;
   };

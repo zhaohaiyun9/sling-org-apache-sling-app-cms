@@ -81,7 +81,7 @@ rava.bind(".Form-Ajax", {
           }
           form.querySelector(".form-wrapper").disabled = false;
           if (callback && Sling.CMS.handlers[callback]) {
-            Sling.CMS.handlers[callback](res, "success");
+            Sling.CMS.handlers[callback](res, "成功");
           } else if (window.parent.window.CMSEditor) {
             let reloadParent = false;
             let { path } = res;
@@ -95,9 +95,9 @@ rava.bind(".Form-Ajax", {
               pathArr.pop();
               path = pathArr.join("/");
             }
-            Sling.CMS.ui.confirmReloadComponent(res, "success", path);
+            Sling.CMS.ui.confirmReloadComponent(res, "成功", path);
           } else {
-            Sling.CMS.ui.confirmReload(res, "success");
+            Sling.CMS.ui.confirmReload(res, "成功");
           }
         } else {
           form.querySelector(".form-wrapper").disabled = false;
@@ -114,7 +114,7 @@ rava.bind(".get-form", {
     submit(event) {
       event.preventDefault();
       event.stopPropagation();
-      const modal = Sling.CMS.ui.loaderModal("Loading...");
+      const modal = Sling.CMS.ui.loaderModal("加载中...");
       const form = this;
       const wrapper = form.querySelector(".form-wrapper");
       async function doGet(aurl) {

@@ -79,7 +79,7 @@ rava.bind(".file", {
               } else {
                 meter.classList.add("is-danger");
                 console.warn(
-                  "Failed to upload %s, recieved message %s",
+                  "%s 上传失败，返回消息 %s",
                   file.name,
                   text
                 ); // eslint-disable-line no-console

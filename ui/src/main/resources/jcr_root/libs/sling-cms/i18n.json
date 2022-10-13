@@ -732,7 +732,7 @@
     },
     "msg-destination-": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "问题:",
+      "sling:message": "目的:",
       "sling:key": "Destination:"
     },
     "msg-disabled": {
@@ -947,7 +947,7 @@
     },
     "msg-existing-path-": {
       "jcr:primaryType": "sling:MessageEntry",
-      "sling:message": "现有的 Path:",
+      "sling:message": "现有路径:",
       "sling:key": "Existing Path:"
     },
     "msg-exporters": {
@@ -2115,6 +2115,11 @@
       "sling:message": "移除任务",
       "sling:key": "Remove Job"
     },
+    "msg-render-file": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "渲染文件",
+      "sling:key": "Render File"
+    },
     "msg-rendition": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "预览图",
@@ -2895,6 +2900,16 @@
       "sling:message": "更新映射",
       "sling:key": "Update Mapping"
     },
+    "msg-update-members": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "更新成员",
+      "sling:key": "Update Members"
+    },
+    "msg-update-membership": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "更新隶属于",
+      "sling:key": "Update Membership"
+    },
     "msg-update-profile": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "更新配置文件",
@@ -2909,6 +2924,11 @@
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "更新引用？",
       "sling:key": "Update References?"
+    },
+    "msg-update-status": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "更新状态",
+      "sling:key": "Update Status"
     },
     "msg-update-user-generated-content": {
       "jcr:primaryType": "sling:MessageEntry",

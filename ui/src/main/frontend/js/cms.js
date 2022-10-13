@@ -52,7 +52,7 @@ window.Sling.CMS = {
   ui: {
     confirmMessage(title, message, complete) {
       const modal = document.createElement('div');
-      modal.innerHTML = `<div class="modal-background"></div><div class="is-draggable modal-content"><div class="box"><h3 class="modal-title">${title}</h3><p>${message}</p><br/><button type="button" class="close-modal button is-primary">OK</button></div></div><button class="modal-close is-large" aria-label="close"></button>`;
+      modal.innerHTML = `<div class="modal-background"></div><div class="is-draggable modal-content"><div class="box"><h3 class="modal-title">${title}</h3><p>${message}</p><br/><button type="button" class="close-modal button is-primary">确定</button></div></div><button class="modal-close is-large" aria-label="close"></button>`;
       document.body.appendChild(modal);
       modal.classList.add('modal');
       modal.classList.add('is-active');
@@ -146,7 +146,7 @@ window.Sling.CMS = {
         CMS = window.top.Sling.CMS;
       }
       if (response.redirected && response.url.indexOf('/system/sling/form/login?resource=') !== -1) {
-        CMS.ui.confirmMessage('301', 'Not logged in, please login again', () => {
+        CMS.ui.confirmMessage('301', '尚未登录，请重新登录', () => {
           window.location = `/system/sling/form/login?resource=${encodeURIComponent(window.location)}`;
         });
         return false;
@@ -170,7 +170,7 @@ if (window.performance
 
 window.onbeforeunload = () => {
   if (document.querySelector('.modal form')) {
-    return 'Are you sure you want to leave this page?';
+    return '确定要离开此页面吗？';
   }
   return null;
 };
