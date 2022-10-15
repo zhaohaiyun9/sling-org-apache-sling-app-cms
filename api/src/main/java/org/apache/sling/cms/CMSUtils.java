@@ -83,7 +83,13 @@ public class CMSUtils {
     @Nullable
     public static final Resource findParentResourceofType(Resource resource, String type) {
         if (resource != null) {
-            if (type.equals(resource.getValueMap().get(JcrConstants.JCR_PRIMARYTYPE, String.class))) {
+            String nodeType = null;
+            try {
+                nodeType = resource.getValueMap().get(JcrConstants.JCR_PRIMARYTYPE, String.class);
+            } catch (Exception e) {
+                // if resource is deleted but not committed yet, an IllegalArgumentException will be thrown
+            }
+            if (type.equals(nodeType)) {
                 return resource;
             } else {
                 return findParentResourceofType(resource.getParent(), type);
@@ -101,8 +107,13 @@ public class CMSUtils {
     @Nullable
     public static final Resource findPublishableParent(Resource resource) {
         if (resource != null) {
-            String type = resource.getValueMap().get(JcrConstants.JCR_PRIMARYTYPE, String.class);
-            if (ArrayUtils.contains(CMSConstants.PUBLISHABLE_TYPES, type)) {
+            String type = null;
+            try {
+                type = resource.getValueMap().get(JcrConstants.JCR_PRIMARYTYPE, String.class);
+            } catch (Exception e) {
+                // if resource is deleted but not committed yet, an IllegalArgumentException will be thrown
+            }
+            if (type != null && ArrayUtils.contains(CMSConstants.PUBLISHABLE_TYPES, type)) {
                 return resource;
             } else if (resource.getParent() != null) {
                 return findPublishableParent(resource.getParent());

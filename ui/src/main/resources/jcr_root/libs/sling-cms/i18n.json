@@ -2305,6 +2305,11 @@
       "sling:message": "保存文件",
       "sling:key": "Save File"
     },
+    "msg-save-page": {
+      "jcr:primaryType": "sling:MessageEntry",
+      "sling:message": "保存页面",
+      "sling:key": "Save Page"
+    },
     "msg-save-i18n-dictionary": {
       "jcr:primaryType": "sling:MessageEntry",
       "sling:message": "保存I18n字典",
