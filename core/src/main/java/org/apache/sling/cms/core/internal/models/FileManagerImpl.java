@@ -32,7 +32,7 @@ public class FileManagerImpl implements FileManager {
     private final File file;
 
     public FileManagerImpl(Resource containingResource) {
-        Resource fileResource = CMSUtils.findParentResourceofType(containingResource, CMSConstants.NT_PAGE);
+        Resource fileResource = CMSUtils.findParentResourceofType(containingResource, CMSConstants.NT_FILE);
         if (fileResource != null) {
             file = fileResource.adaptTo(File.class);
         } else {

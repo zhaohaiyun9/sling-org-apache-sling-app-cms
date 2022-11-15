@@ -4,6 +4,7 @@
   "type": "lucene",
   "includedPaths": ["/etc/taxonomy"],
   "async": ["async", "nrt"],
+  "reindex": true,
   "evaluatePathRestrictions": true,
   "indexRules": {
     "jcr:primaryType": "nt:unstructured",

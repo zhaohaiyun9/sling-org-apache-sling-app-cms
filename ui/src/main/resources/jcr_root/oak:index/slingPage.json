@@ -3,6 +3,7 @@
   "compatVersion": 2,
   "type": "lucene",
   "async": ["async", "nrt"],
+  "reindex": true,
   "evaluatePathRestrictions": true,
   "includedPaths": ["/content", "/static"],
   "aggregates": {
