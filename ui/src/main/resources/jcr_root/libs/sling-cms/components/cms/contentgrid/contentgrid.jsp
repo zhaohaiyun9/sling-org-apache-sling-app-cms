@@ -28,7 +28,16 @@
 <c:set var="PAGE_SIZE" value="${60}" />
 <div class="reload-container scroll-container contentnav" data-path="${resource.path}.grid.html${sling:encode(slingRequest.requestPathInfo.suffix,'HTML_ATTR')}">
     <div class="columns is-multiline">
-        <c:forEach var="child" items="${sling:listChildren(slingRequest.requestPathInfo.suffixResource)}" varStatus="status" begin="${paginationPage * PAGE_SIZE}" end="${(paginationPage * PAGE_SIZE + PAGE_SIZE) - 1}">
+        <% 
+            java.util.List list = java.util.stream.StreamSupport.stream(
+                java.util.Spliterators.spliteratorUnknownSize(
+                    slingRequest.getRequestPathInfo().getSuffixResource().listChildren(), 0), 
+                false)
+                .collect(java.util.stream.Collectors.toList());
+            java.util.Collections.reverse(list);
+            pageContext.setAttribute("reversedChildren", list.iterator());
+        %>
+        <c:forEach var="child" items="${reversedChildren}" varStatus="status" begin="${paginationPage * PAGE_SIZE}" end="${(paginationPage * PAGE_SIZE + PAGE_SIZE) - 1}">
             <c:set var="showCard" value="${false}" />
             <c:forEach var="type" items="${sling:listChildren(sling:getRelativeResource(resource,'types'))}">
                 <c:if test="${child.valueMap['jcr:primaryType'] == type.name}">

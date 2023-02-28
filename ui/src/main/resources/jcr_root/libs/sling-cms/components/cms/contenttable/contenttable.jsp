@@ -44,7 +44,16 @@
         <tbody>
             <c:set var="parentPath" value="${slingRequest.requestPathInfo.suffix}${not empty properties.appendSuffix ? properties.appendSuffix : ''}" />
             <c:set var="count" value="${paginationPage * PAGE_SIZE + 1}" />
-            <c:forEach var="child" items="${sling:listChildren(sling:getResource(resourceResolver, parentPath))}" varStatus="status" begin="${paginationPage * PAGE_SIZE}" end="${(paginationPage * PAGE_SIZE + PAGE_SIZE) - 1}">
+            <% 
+                java.util.List list = java.util.stream.StreamSupport.stream(
+                    java.util.Spliterators.spliteratorUnknownSize(
+                        resourceResolver.getResource((String) pageContext.getAttribute("parentPath")).listChildren(), 0), 
+                    false)
+                    .collect(java.util.stream.Collectors.toList());
+                java.util.Collections.reverse(list);
+                pageContext.setAttribute("reversedChildren", list.iterator());
+            %>
+            <c:forEach var="child" items="${reversedChildren}" varStatus="status" begin="${paginationPage * PAGE_SIZE}" end="${(paginationPage * PAGE_SIZE + PAGE_SIZE) - 1}">
                 <c:set var="type" value="${not empty child.valueMap['jcr:primaryType'] ? child.valueMap['jcr:primaryType'] : fn:replace(child.resourceType,'/','-')}" />
                 <sling:getResource var="typeConfig" base="${resource}" path="types/${type}" />
                 <c:if test="${typeConfig != null && !fn:contains(child.name,':')}">
